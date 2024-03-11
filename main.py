@@ -1,12 +1,6 @@
-import smtplib
-
 import pandas as pd
 
 import datetime as dt
-
-import os
-
-
 
 current_day = dt.date.today().strftime("%#d.%#m")
 future_Date = (dt.datetime.today() + dt.timedelta(days=2)).strftime("%#d.%#m")
