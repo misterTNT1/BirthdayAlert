@@ -4,7 +4,7 @@ import datetime as dt
 
 future_Date = (dt.datetime.today() + dt.timedelta(days=2)).strftime("%#d.%#m")
 
-data = pd.read_csv("data/Book2.csv")
+data = pd.read_csv("data/Birthdays.csv")
 
 msg = "יש יום הולדת עוד יומיים"
 
