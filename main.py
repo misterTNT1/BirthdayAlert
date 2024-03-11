@@ -12,5 +12,3 @@ for index, row in data.iterrows():
     name, date = row["names"], str(row["dates"])
     if date == future_Date:
         print(f"ל{name} {msg}")
-
-print(data["names"][7])
