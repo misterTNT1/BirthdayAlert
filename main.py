@@ -11,6 +11,6 @@ msg = "יש יום הולדת עוד יומיים"
 for index, row in data.iterrows():
     name, date = row["names"], str(row["dates"])
     if date == future_Date:
-        print(f"ל{data["names"][0]} {msg}")
+        print(f"ל{name} {msg}")
 
 print(data["names"][7])
