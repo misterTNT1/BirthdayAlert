@@ -6,7 +6,11 @@ future_Date = (dt.datetime.today() + dt.timedelta(days=2)).strftime("%#d.%#m")
 
 data = pd.read_csv("data/Book2.csv")
 
+msg = "יש יום הולדת עוד יומיים"
+
 for index, row in data.iterrows():
     name, date = row["names"], str(row["dates"])
     if date == future_Date:
-        print(f"{name} has a birthday in 2 days")
+        print(f"ל{data["names"][0]} {msg}")
+
+print(data["names"][7])
